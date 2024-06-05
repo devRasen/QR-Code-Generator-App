@@ -1,0 +1,91 @@
+/* 
+Project Name: QR Code Generator App
+Author: devRasen
+Github: https://github.com/devRasen
+*/
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, #108dc7, #1565c0);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 600px;
+}
+
+header {
+  text-align: center;
+}
+
+header p {
+  margin: 10px 0 30px;
+  opacity: 0.8;
+}
+
+.form {
+  margin: 20px 0;
+  position: relative;
+}
+
+.form input {
+  width: 100%;
+  font-size: 20px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.form button {
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  background-color: #4285f4;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.qr-code {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .form input,
+  .form button {
+    width: 100%;
+  }
+
+  .form button {
+    position: unset;
+    margin-top: 15px;
+  }
+
+  .qr-code img {
+    width: 180px;
+    height: 180px;
+  }
+}
